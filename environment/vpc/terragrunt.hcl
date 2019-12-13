@@ -14,6 +14,6 @@ terraform {
 
 inputs = {
   subscriptionid                    = "55499760-24b4-466b-bb02-897da98f1ec7"
-  resourcegroup_name                = "test_oops_rz_terraform"
+  resourcegroup_name                = "test-oops-rz-terraform"
   location                          = "North Europe"
 }

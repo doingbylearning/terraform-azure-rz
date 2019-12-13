@@ -10,9 +10,11 @@ terraform {
 remote_state {
   backend = "azurerm"
   config = {
-    resource_group_name               = var.resourcegroup_name
-    storage_account_name              = "storage${var-resourcegroup_name}"
-    container_name                    = "terraform_state"
-    key                               = format("%s/terraform.tfstate", path_relative_top_include())
+    subscription_id                   = "bb201c92-772b-4d50-91cd-871224e1bce6"
+    resource_group_name               = "testoopsrz"
+    storage_account_name              = "oopsterraformstorage"
+    container_name                    = "terraformstate"
+    key                               = format("%s/terraform.tfstate", path_relative_to_include())
+    access_key                        = "AYv68e4WxeKfz7OspK5gz6F+V7VflbvWg529QN0dsJnzSTpVNKQnszm7TkJZX/qQa2Mwwcc8+8MyOCWthQaMsw=="
   }
 }

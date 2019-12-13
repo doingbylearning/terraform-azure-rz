@@ -4,6 +4,11 @@ provider "azurerm" {
     subscription_id             = var.subscriptionid
 }
 
+terraform {
+    backend "azurerm" {
+        
+    }
+}
 
 resource "azurerm_resource_group" "resourcegroup_terraform" {
     name                        = var.resourcegroup_name
