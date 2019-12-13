@@ -13,7 +13,15 @@ terraform {
 }
 
 inputs = {
+  
+ #Main Resource var's
   subscriptionid                    = "55499760-24b4-466b-bb02-897da98f1ec7"
   resourcegroup_name                = "test-oops-rz-terraform"
   location                          = "North Europe"
+
+ #Network var's
+  dnsservers                        = ["8.8.8.8", "8.8.4.4"]
+  addressspace_main                 = ["10.16.0.0/16"]
+  public_subnet_cidr                = ["10.16.10.0/24", "10.16.11.0/24"]
+
 }

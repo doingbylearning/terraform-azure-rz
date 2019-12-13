@@ -13,4 +13,17 @@ variable "location" {
   type                              = string
   }
 
-  
+variable "dnsservers" {
+    description                     = "Used DNS Servers"
+    type                            = list(string)
+}
+
+variable "addressspace_main" {
+    description                     = "Main Address Space CIDR used"
+    type                            = list  
+}
+
+variable "public_subnet_cidr" {
+    description                     = "Public Subnet CIDRs used"
+    type                            = list(string)
+}
