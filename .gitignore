@@ -1,0 +1,2 @@
+tools/terra*
+**.terragrunt-cache*
