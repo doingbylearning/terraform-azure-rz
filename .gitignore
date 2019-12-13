@@ -1,2 +1,3 @@
 tools/terra*
 **.terragrunt-cache*
+**.log*

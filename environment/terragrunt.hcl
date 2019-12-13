@@ -1,6 +1,6 @@
 terraform {
   extra_arguments "retry_lock" {
-    commands  = get_terraform_commands_that_need_locking()
+    commands  = get_terraform_commands_that_need_locking() #noqa
     arguments = [
       "-lock-timeout=60m"
     ]
@@ -15,6 +15,6 @@ remote_state {
     storage_account_name              = "oopsterraformstorage"
     container_name                    = "terraformstate"
     key                               = format("%s/terraform.tfstate", path_relative_to_include())
-    access_key                        = "AYv68e4WxeKfz7OspK5gz6F+V7VflbvWg529QN0dsJnzSTpVNKQnszm7TkJZX/qQa2Mwwcc8+8MyOCWthQaMsw=="
+    
   }
 }
